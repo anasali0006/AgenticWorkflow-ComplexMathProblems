@@ -1,4 +1,6 @@
-# ConvFinQA Agents based solution
+# Agents based solution for solving complex mathematical problems
+
+Dataset used: ConvFinQA
 
 Steps to Run:
 
