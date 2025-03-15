@@ -1,5 +1,4 @@
-# tomoro_assessment
-Code for the assessment for TomoroAI
+# ConvFinQA Agents based solution
 
 Steps to Run:
 
