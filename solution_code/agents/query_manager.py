@@ -54,5 +54,4 @@ Here is the list of the organizations to chose from. It gives Abbreviations and 
     
     def execute(self, client, model, user_query):
 
-        self.user_message = user_query
-        return get_json_completion(client, model, self.system_prompt, self.user_message, QueryManagerResponse)
+        return get_json_completion(client, model, self.system_prompt, user_query, QueryManagerResponse)

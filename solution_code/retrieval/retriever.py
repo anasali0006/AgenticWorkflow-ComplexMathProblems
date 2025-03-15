@@ -17,7 +17,9 @@ class RetrievalEngine:
     """
 
     def __init__(self):
-        self.top_k = 20
+
+        self.top_k = 5
+
         self.BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         self.PROJECT_DIR = os.path.dirname(self.BASE_DIR)
         self.data_with_semantic_vectors_path = os.path.join(self.PROJECT_DIR, "data", "dense_embedddings_with_index.parquet") 
@@ -27,7 +29,6 @@ class RetrievalEngine:
         self.tfidf_vectorizer = TfidfVectorizer()
         self.tfidf_vectorizer.fit(self.vectors_df["Context"].tolist())
         self.embedding_model = "text-embedding-3-large"
-
 
 
     def load_vector_data(self):
@@ -72,12 +73,13 @@ class RetrievalEngine:
         similarities = cosine_similarity(matrix, query_vector).flatten()
         top_k_indices = np.argsort(similarities)[-self.top_k:][::-1]
         final_df = org_df.iloc[top_k_indices]
-        print(123)
-        pass
+
+        return final_df
+
 
     def run_retrieval_engine(self, client, user_query, organization_abbreviation):
-        
+        # This method runs the retrieval engine with steps. 
         org_df = self.filter_organizations(organization_abbreviation)
-        self.filter_within_organziation(client, user_query, org_df)
-        return org_df
-        pass
+        org_df = self.filter_within_organziation(client, user_query, org_df)
+        
+        return org_df[["Context", "Question", "Dialogue"]]

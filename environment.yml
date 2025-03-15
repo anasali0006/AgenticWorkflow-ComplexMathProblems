@@ -1,63 +1,61 @@
 name: tomoro
 channels:
-  - defaults
   - conda-forge
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
+  - defaults
 dependencies:
-  - appnope=0.1.4
-  - asttokens=3.0.0
-  - bzip2=1.0.8
-  - ca-certificates=2025.2.25
-  - comm=0.2.2
-  - debugpy=1.8.11
-  - decorator=5.2.1
-  - exceptiongroup=1.2.2
-  - executing=2.1.0
-  - expat=2.6.4
-  - importlib-metadata=8.6.1
-  - ipykernel=6.29.5
-  - ipython=9.0.0
-  - ipython_pygments_lexers=1.1.1
-  - jedi=0.19.2
-  - jupyter_client=8.6.3
-  - jupyter_core=5.7.2
-  - libcxx=14.0.6
-  - libffi=3.4.4
-  - libsodium=1.0.18
-  - matplotlib-inline=0.1.7
-  - ncurses=6.4
-  - nest-asyncio=1.6.0
-  - openssl=3.4.1
-  - packaging=24.2
-  - parso=0.8.4
-  - pexpect=4.9.0
-  - pickleshare=0.7.5
-  - pip=25.0
-  - platformdirs=4.3.6
-  - prompt-toolkit=3.0.50
-  - psutil=5.9.0
-  - ptyprocess=0.7.0
-  - pure_eval=0.2.3
-  - pygments=2.19.1
-  - python=3.12.8
-  - python-dateutil=2.9.0.post0
-  - pyzmq=26.2.0
-  - readline=8.2
-  - setuptools=75.8.0
-  - six=1.17.0
-  - sqlite=3.45.3
-  - stack_data=0.6.3
-  - tk=8.6.14
-  - tornado=6.4.2
-  - traitlets=5.14.3
-  - typing_extensions=4.12.2
-  - wcwidth=0.2.13
-  - wheel=0.45.1
-  - xz=5.6.4
-  - zeromq=4.3.5
-  - zipp=3.21.0
-  - zlib=1.2.13
+  - appnope=0.1.4=pyhd8ed1ab_1
+  - asttokens=3.0.0=pyhd8ed1ab_1
+  - bzip2=1.0.8=h80987f9_6
+  - ca-certificates=2025.2.25=hca03da5_0
+  - comm=0.2.2=pyhd8ed1ab_1
+  - debugpy=1.8.11=py312h313beb8_0
+  - decorator=5.2.1=pyhd8ed1ab_0
+  - exceptiongroup=1.2.2=pyhd8ed1ab_1
+  - executing=2.1.0=pyhd8ed1ab_1
+  - expat=2.6.4=h313beb8_0
+  - importlib-metadata=8.6.1=pyha770c72_0
+  - ipykernel=6.29.5=py312hca03da5_1
+  - ipython=9.0.0=pyhfb0248b_1
+  - ipython_pygments_lexers=1.1.1=pyhd8ed1ab_0
+  - jedi=0.19.2=py312hca03da5_0
+  - jupyter_client=8.6.3=py312hca03da5_0
+  - jupyter_core=5.7.2=py312hca03da5_0
+  - libcxx=14.0.6=h848a8c0_0
+  - libffi=3.4.4=hca03da5_1
+  - libsodium=1.0.18=h1a28f6b_0
+  - matplotlib-inline=0.1.7=pyhd8ed1ab_1
+  - ncurses=6.4=h313beb8_0
+  - nest-asyncio=1.6.0=py312hca03da5_0
+  - openssl=3.4.1=h81ee809_0
+  - packaging=24.2=py312hca03da5_0
+  - parso=0.8.4=py312hca03da5_0
+  - pexpect=4.9.0=pyhd8ed1ab_1
+  - pickleshare=0.7.5=pyhd3eb1b0_1003
+  - pip=25.0=py312hca03da5_0
+  - platformdirs=4.3.6=pyhd8ed1ab_1
+  - prompt-toolkit=3.0.50=pyha770c72_0
+  - psutil=5.9.0=py312h80987f9_1
+  - ptyprocess=0.7.0=pyhd3eb1b0_2
+  - pure_eval=0.2.3=pyhd8ed1ab_1
+  - pygments=2.19.1=pyhd8ed1ab_0
+  - python=3.12.8=h99e199e_0
+  - python-dateutil=2.9.0.post0=py312hca03da5_1
+  - pyzmq=26.2.0=py312h313beb8_0
+  - readline=8.2=h1a28f6b_0
+  - setuptools=75.8.0=py312hca03da5_0
+  - six=1.17.0=pyhd8ed1ab_0
+  - sqlite=3.45.3=h80987f9_0
+  - stack_data=0.6.3=pyhd8ed1ab_1
+  - tk=8.6.14=h6ba3021_0
+  - tornado=6.4.2=py312h80987f9_0
+  - traitlets=5.14.3=py312hca03da5_0
+  - typing_extensions=4.12.2=py312hca03da5_0
+  - wcwidth=0.2.13=pyhd8ed1ab_1
+  - wheel=0.45.1=py312hca03da5_0
+  - xz=5.6.4=h80987f9_1
+  - zeromq=4.3.5=h313beb8_0
+  - zipp=3.21.0=py312hca03da5_0
+  - zlib=1.2.13=h18a0788_1
   - pip:
       - annotated-types==0.7.0
       - anyio==4.8.0
@@ -68,6 +66,7 @@ dependencies:
       - cycler==0.12.1
       - distro==1.9.0
       - dotenv==0.9.9
+      - et-xmlfile==2.0.0
       - fonttools==4.56.0
       - frozendict==2.4.6
       - h11==0.14.0
@@ -81,6 +80,7 @@ dependencies:
       - multitasking==0.0.11
       - numpy==2.2.3
       - openai==1.65.4
+      - openpyxl==3.1.5
       - pandas==2.2.3
       - peewee==3.17.9
       - pillow==11.1.0
@@ -104,4 +104,4 @@ dependencies:
       - tzdata==2025.1
       - urllib3==2.3.0
       - yfinance==0.2.54
-prefix: /opt/homebrew/Caskroom/miniconda/base/envs/tomoro
+prefix: /opt/anaconda3/envs/tomoro
